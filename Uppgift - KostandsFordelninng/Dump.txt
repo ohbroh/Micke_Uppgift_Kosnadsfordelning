@@ -1,0 +1,183 @@
+﻿
+                //foreach (var x in parameterArray)
+                //{
+                //    string[] sources = (x.Split(';'));
+                //    string acc_From = sources[0].Split('-')[0];
+                //    string acc_To = sources[0].Split('-')[1];
+
+                //    StringBuilder sql = new StringBuilder();
+                //    sql.Append("DATABASE  ");
+                //    sql.Append(" SELECT ");
+                //    sql.Append("    client,");
+                //    sql.Append("    SUM(amount) AS sum_amount, ");
+                //    sql.Append("    account, ");
+                //    sql.Append("    period ");
+                //    sql.Append($" INTO { helptable } ");
+                //    sql.Append(" FROM agltransact ");
+                //    sql.Append($"WHERE period BETWEEN {param_Period_from} AND {param_Period_to} ");
+                //    sql.Append($"AND account BETWEEN {acc_From} AND {acc_To} ");
+                //    sql.Append("GROUP BY client, account, period  ");
+                //    CurrentContext.Database.Execute(sql.ToString());
+
+                //}
+
+                //DataTable dt = new DataTable();
+                //StringBuilder sqlDt = new StringBuilder();
+                //sqlDt.Append("DATABASE  ");
+                //sqlDt.Append(" SELECT ");
+                //sqlDt.Append("    client,");
+                //sqlDt.Append("    SUM(amount) AS sum_amount, ");
+                //sqlDt.Append("    account, ");
+                //sqlDt.Append("    period ");
+                //sqlDt.Append(" FROM agltransact ");
+                //sqlDt.Append("WHERE period = 201701 ");
+                //sqlDt.Append("AND account BETWEEN 1000 AND 1979 ");
+                //sqlDt.Append("GROUP BY client, account, period  ");
+                //CurrentContext.Database.Read(sqlDt.ToString(), dt);
+
+                //DataTable dt = new DataTable();
+                //StringBuilder sqlDt = new StringBuilder();
+                //sqlDt.Append("DATABASE  ");
+                //sqlDt.Append(" SELECT ");
+                //sqlDt.Append("    client,");
+                //sqlDt.Append("    SUM(amount) AS sum_amount, ");
+                //sqlDt.Append("    account, ");
+                //sqlDt.Append("    period ");
+                //sqlDt.Append(" FROM agltransact ");
+                //sqlDt.Append("WHERE period = 201701 ");
+                //sqlDt.Append("AND account BETWEEN 1000 AND 1979 ");
+                //sqlDt.Append("GROUP BY client, account, period  ");
+                //CurrentContext.Database.Read(sqlDt.ToString(), dt);
+
+                //ServerAPI.Current.WriteLog("lOOP START");
+                //foreach (DataRow dr in dt.Rows)
+                //{
+                //    decimal sum_amount = Convert.ToDecimal(dr["sum_amount"].ToString());
+                //    ServerAPI.Current.WriteLog(sum_amount.ToString());
+                //}
+                //ServerAPI.Current.WriteLog("LOOP END");
+
+
+
+
+                //CurrentContext.Database.Read(sql.ToString(), dt);
+                //// return CurrentContext.Database.Execute(this.ToString());
+
+                /*
+                 * bachid -- klar
+                 * client -- klar
+                 * account -- klar
+                 * amount --klar
+                 * cur amount --klar
+                 * interface - behövs inte?
+                 * transtype - behövs inte?
+                 * voucher type - behövs inte?
+                 * trans date - behövs inte?
+                 * voucher date - behövs inte?
+                 * peiod -- klar
+                 * ext_ref -- behövs inte?
+                 * description -- "TEST"
+                 * sequence no -- behövs inte?
+                 * dc flag -- behövs inte?
+                 */
+
+                //string test_helptable = api.GetNextTempTableName();
+
+                //                foreach (DataRow dr in dt.Rows)
+                //                {
+                //                    decimal sum_amount = Convert.ToDecimal(dr["sum_amount"].ToString());
+                //                    ServerAPI.Current.WriteLog(dr.ToString());
+                //                    //if(sum_amount < 0)
+                //                    //{
+                //                        StringBuilder sql2 = new StringBuilder();
+                //                        sql.Append("INSERT INTO ");
+                //                        sql.Append(test_helptable);
+                //                        sql.Append("    SUM(amount) AS sum_amount, ");
+                //                        sql.Append("    account, ");
+                //                        sql.Append("    period ");
+                //                        sql.Append("FROM agltransact ");
+                //                        sql.Append("WHERE period = 201701 ");
+                //                        sql.Append("AND account BETWEEN 1000 AND 1979 ");
+                //                        sql.Append("GROUP BY client, account, period ");
+
+                //                        int rows = CurrentContext.Database.Execute(sql2.ToString());
+                //                        ServerAPI.Current.WriteLog($"Rows inserted:  { rows }");
+
+                //                    _report.DbAPI.SelectLoop(selectResources.ToString(),
+                // updateStmt1.ToString(), updateStmt2.ToString(), "Select Loop", ref noRows1, ref
+                //noRows2);
+
+                //                    //}
+                //                    //else { }
+
+                //                }
+
+                
+            //StringBuilder sql = new StringBuilder();
+            //sql.Append("DATABASE INSERT INTO  ");
+            //sql.Append(" KF_buffertable ( ");
+            //sql.Append("    client,");
+            //sql.Append("    sum_amount, ");
+            //sql.Append(account);
+            //sql.Append("   , period ) ");
+            //sql.Append("SELECT  ");
+            //sql.Append("    client,");
+            //sql.Append("    SUM(amount) AS sum_amount, ");
+            //sql.Append("    account, ");
+            //sql.Append("    period  ");
+            //sql.Append(" FROM agltransact ");
+            //sql.Append($"WHERE period BETWEEN {param_Period_from} AND {param_Period_to} ");
+            //sql.Append($"AND account BETWEEN {acc_From} AND {acc_To} ");
+            //sql.Append("GROUP BY client, account, period  ");
+            //CurrentContext.Database.Execute(sql.ToString());
+            
+//{
+
+//    StringBuilder sqlbach = new StringBuilder();
+//    sqlbach.Append("DATABASE INSERT INTO  ");
+//    sqlbach.Append(" acrbatchinput ( ");
+//    sqlbach.Append("    client,");
+//    sqlbach.Append("    sum_amount,");
+//    sqlbach.Append("    account, ");
+//    sqlbach.Append("    period ) ");
+//    sqlbach.Append("SELECT  ");
+//    sqlbach.Append("    client,");
+//    sqlbach.Append("    SUM(amount) AS sum_amount, ");
+//    sqlbach.Append("    account, ");
+//    sqlbach.Append("    period  ");
+//    sqlbach.Append(" FROM KF_buffertable ");
+//    sqlbach.Append($"WHERE period BETWEEN {param_Period_from} AND {param_Period_to} ");
+//    sqlbach.Append($"AND account BETWEEN {acc_From} AND {acc_To} ");
+//    sqlbach.Append("GROUP BY client, account, period  ");
+
+//    CurrentContext.Database.Execute(sqlbach.ToString());
+
+ public static void insertHelptable()
+        {
+
+            ServerAPI.Current.WriteLog("-----------------------");
+            ServerAPI.Current.WriteLog("INSERT TO HELPTABLE");
+            ServerAPI.Current.WriteLog("-----------------------");
+            IServerDbAPI api = ServerAPI.Current.DatabaseAPI;
+            string tempTable = api.GetNextTempTableName();
+                     
+            StringBuilder sqlbuff = new StringBuilder();
+            sqlbuff.Append(" DATABASE SELECT  ");
+
+            sqlbuff.Append("    client,");
+            sqlbuff.Append("    sum_amount,");
+            sqlbuff.Append("    account, ");
+            sqlbuff.Append("    period ) ");
+            sqlbuff.Append($"   INTO { tempTable } ");
+            sqlbuff.Append("    FROM ");
+            sqlbuff.Append("    KF_buffertable ");
+            ServerAPI.Current.WriteLog("-----------------------");
+
+            CurrentContext.Database.Execute(sqlbuff.ToString());
+
+
+         //   ServerAPI.Current.DatabaseAPI.CreateTable(tempTable,
+         //sqlbuff.ToString(), "Create help table temp");
+            ServerAPI.Current.WriteLog("-----------------------");
+
+        }

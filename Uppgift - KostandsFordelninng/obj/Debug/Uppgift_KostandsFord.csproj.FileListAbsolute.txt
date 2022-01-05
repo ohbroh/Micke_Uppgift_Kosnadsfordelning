@@ -1,0 +1,9 @@
+C:\Users\william.berglund\source\repos\Uppgift - KostandsFordelninng\Uppgift - KostandsFordelninng\bin\Debug\Uppgift_KostandsFord.dll
+C:\Users\william.berglund\source\repos\Uppgift - KostandsFordelninng\Uppgift - KostandsFordelninng\bin\Debug\Uppgift_KostandsFord.pdb
+C:\Users\william.berglund\source\repos\Uppgift - KostandsFordelninng\Uppgift - KostandsFordelninng\bin\Debug\ACT.dll
+C:\Program Files (x86)\UNIT4 Business World On! (v7)\Bin\Uppgift_KostandsFord.dll
+C:\Program Files (x86)\UNIT4 Business World On! (v7)\Bin\Uppgift_KostandsFord.pdb
+C:\Users\william.berglund\source\repos\Uppgift - KostandsFordelninng\Uppgift - KostandsFordelninng\obj\Debug\Uppgift_KostandsFord.csproj.CoreCompileInputs.cache
+C:\Users\william.berglund\source\repos\Uppgift - KostandsFordelninng\Uppgift - KostandsFordelninng\obj\Debug\Uppgift_KostandsFord.csproj.CopyComplete
+C:\Users\william.berglund\source\repos\Uppgift - KostandsFordelninng\Uppgift - KostandsFordelninng\obj\Debug\Uppgift_KostandsFord.dll
+C:\Users\william.berglund\source\repos\Uppgift - KostandsFordelninng\Uppgift - KostandsFordelninng\obj\Debug\Uppgift_KostandsFord.pdb
